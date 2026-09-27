@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+      - name: Install (locked)
+        run: uv sync --locked
+      - name: Lint
+        run: uv run --locked ruff check .
+      - name: Offline reproduction (dominant lineup)
+        run: uv run --locked python scripts/evaluate.py --benchmark refadv --lineup dominant
+      - name: Offline reproduction (balanced lineup)
+        run: uv run --locked python scripts/evaluate.py --benchmark refadv --lineup balanced

@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below (preferred-citation) and, if useful, the software itself."
+title: "FORUM: Frozen Outputs Reconciled Using Model Agreement for Visual Grounding"
+type: software
+version: 1.0.0
+date-released: 2026-09-27
+repository-code: "https://github.com/Neurogica/FORUM"
+license: BSD-3-Clause
+authors:
+  - family-names: Sato
+    given-names: Taiyo
+    orcid: "https://orcid.org/0009-0005-0477-2117"
+    affiliation: "Hokkaido University / Neurogica Inc."
+  - family-names: Sanda
+    given-names: Takamasa
+    affiliation: "Neurogica Inc."
+  - family-names: Maeda
+    given-names: Keisuke
+    orcid: "https://orcid.org/0000-0001-8039-3462"
+    affiliation: "Hokkaido University"
+  - family-names: Ogawa
+    given-names: Takahiro
+    orcid: "https://orcid.org/0000-0001-5332-8112"
+    affiliation: "Hokkaido University"
+  - family-names: Haseyama
+    given-names: Miki
+    orcid: "https://orcid.org/0000-0003-1496-1761"
+    affiliation: "Hokkaido University"
+  - family-names: Nagashima
+    given-names: Shunya
+    orcid: "https://orcid.org/0009-0007-9741-7628"
+    affiliation: "Neurogica Inc."
+preferred-citation:
+  type: conference-paper
+  title: "FORUM: Frozen Outputs Reconciled Using Model Agreement for Visual Grounding"
+  collection-title: "Proceedings of the Asian Conference on Computer Vision (ACCV)"
+  year: 2026
+  authors:
+    - family-names: Sato
+      given-names: Taiyo
+    - family-names: Sanda
+      given-names: Takamasa
+    - family-names: Maeda
+      given-names: Keisuke
+    - family-names: Ogawa
+      given-names: Takahiro
+    - family-names: Haseyama
+      given-names: Miki
+    - family-names: Nagashima
+      given-names: Shunya
